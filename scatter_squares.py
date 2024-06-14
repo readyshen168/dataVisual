@@ -14,4 +14,5 @@ ax.set_xlabel("Value", fontsize=14)
 ax.set_ylabel("Square 0f Value", fontsize=14)
 ax.tick_params(labelsize=14)
 
+plt.savefig('squres_plot.png', bbox_inches='tight')
 plt.show()
