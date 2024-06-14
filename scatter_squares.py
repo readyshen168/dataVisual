@@ -3,9 +3,9 @@ import matplotlib.pyplot as plt
 plt.style.use('dark_background')
 fig, ax = plt.subplots()
 
-x_values = [1, 2, 3, 4]
-y_values = [2, 4, 9, 16]
-ax.scatter(x_values, y_values, s=100)
+x_values = range(1, 1001)
+y_values = [x**2 for x in x_values]
+ax.scatter(x_values, y_values, s=0.6)
 
 ax.set_title("Scatter Square Numbers")
 ax.set_xlabel("Value", fontsize=14)
