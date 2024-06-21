@@ -1,8 +1,9 @@
 import matplotlib.pyplot as plt
 from random_walk import RandomWalk
 
-plt.style.use('Solarize_Light2')
-fig, ax = plt.subplots()
+plt.style.use('dark_background')
+# 调整Matplotlib的输出尺寸
+fig, ax = plt.subplots(figsize=(16,9))
 
 # 新建随机游走类
 rw = RandomWalk()
@@ -16,8 +17,8 @@ ax.scatter(rw.x_values[0], rw.y_values[0], c='red', edgecolors='none', s=50)
 ax.scatter(rw.x_values[-1], rw.y_values[-1], c='green', edgecolors='none', s=50)
 
 # 隐藏坐标轴
-ax.get_xaxis().set_visible(False)
-ax.get_yaxis().set_visible(False)
+# ax.get_xaxis().set_visible(False)
+# ax.get_yaxis().set_visible(False)
 
 # 打印最后一个点
 print(f"x:{rw.x_values[-1]}, y:{rw.y_values[-1]}")
